@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine ? 💖</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- ===== PAGE 1: The Question ===== -->
+    <div class="page active" id="questionPage">
+        <div class="card">
+            <div class="emoji-row">
+                <span class="emoji bounce-1">🐱</span>
+                <span class="emoji bounce-2">💗</span>
+            </div>
+            <h1 class="question-text">Will you be my Valentine Baby?</h1>
+            <div class="buttons-area">
+                <button class="btn btn-yes" id="btnYes" onclick="sayYes()">
+                    Yes 🥰
+                </button>
+                <button class="btn btn-no" id="btnNo">
+                    No
+                </button>
+            </div>
+            <p class="hint-text">(No is a little shy 😈)</p>
+        </div>
+    </div>
+
+    <!-- ===== PAGE 2: She Said Yes! ===== -->
+    <div class="page" id="celebrationPage">
+        <div class="card celebration-card">
+            <div class="emoji-row">
+                <span class="emoji bounce-1">🤗</span>
+                <span class="emoji bounce-2">🌸</span>
+                <span class="emoji bounce-3">💖</span>
+            </div>
+            <h1 class="celebration-title">WIFEY 💕</h1>
+            <p class="congrats-text">
+                This moment just became a beautiful memory ✨
+            </p>
+            <p class="love-message">
+                My love, loving you has changed the way I breathe, the way I dream, the way I understand life itself. You didn’t just enter my world—you became my world. In your smile I find my peace, in your tears I find my purpose, and in your arms I find a home I never want to leave. You know my flaws, my fears, my silence, and still you choose me every single day—and that truth humbles me more than words ever could. I don’t promise perfection, but I promise loyalty, honesty, and a love that will stand beside you in every storm and every sunrise. If I had a thousand lifetimes, I would find you in every one and fall in love with you all over again, because you are not just my love—you are my forever, my soul, my everything, my heart. 💖<br>
+                Thank you for being my love, my soulmate.
+            </p>
+            <p class="love-ending">I love you endlessly ❤️😘💕</p>
+            <div class="heart-beat-container">
+                <span class="big-heart">💝</span>
+            </div>
+            <p class="sign-off">- Baby</p>
+        </div>
+    </div>
+
+    <!-- Canvas for confetti -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
